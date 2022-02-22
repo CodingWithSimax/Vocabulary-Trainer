@@ -1,0 +1,21 @@
+.homepage-background {
+    left: 0;
+    top: 0;
+
+    background-color: darkorange;
+}
+
+.homepage-title {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+
+    max-width: min(200px, 100vw);
+
+    transform: translate(-50%, -50%);
+}

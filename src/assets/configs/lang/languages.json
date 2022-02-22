@@ -1,0 +1,12 @@
+{
+    "languages": [
+        {
+            "name": "Deutsch",
+            "path": "de_DE"
+        },
+        {
+            "name": "English",
+            "path": "en_US"
+        }
+    ]
+}
