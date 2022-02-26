@@ -1,4 +1,3 @@
-const splitter: string = ";";
 const allSplitters: Array<string> = [
     ";",
     ","
@@ -31,7 +30,11 @@ export function detectAttributes(data: string): {
     outerContent = outerContent.trim();
     //
 
-    const wordForms = outerContent.split(splitter).map(word => word.trim());
+    let wordForms = [outerContent];
+    for (const splitter of allSplitters) {
+        wordForms = wordForms.join("|||").split(splitter).join("|||").split("|||");
+    }
+    wordForms = wordForms.map(form => form.trim());
 
     const wordKeyForms: {
         [key: string]: string
