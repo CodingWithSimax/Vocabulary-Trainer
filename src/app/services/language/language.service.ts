@@ -8,7 +8,12 @@ export class LanguageService {
     private curLanguage = "de_DE";
     public language: Language = {
         homepage: {
-            title: ""
+            title: "",
+            startNow: ""
+        },
+        boxCreation: {
+            boxName: "",
+            boxLanguage: ""
         }
     }
 
@@ -36,6 +41,6 @@ export class LanguageService {
         }
 
 
-        console.log("finished loading config: ", this.language, availableLanguages);
+        console.log("finished loading language: ", this.language, availableLanguages);
     }
 }

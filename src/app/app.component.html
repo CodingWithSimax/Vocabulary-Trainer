@@ -1,2 +1,6 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<div class="app-flex-box d-flex flex-column flex-nowrap h-100 w-100 position-absolute">
+    <app-navbar class="flex-grow-0"></app-navbar>
+    <div class="flex-grow-1 position-relative align-self-stretch">
+        <router-outlet></router-outlet>
+    </div>
+</div>

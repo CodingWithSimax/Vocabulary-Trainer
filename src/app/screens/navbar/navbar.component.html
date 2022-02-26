@@ -2,5 +2,16 @@
     <div class="navbar-icon bi bi-list" (click)="triggerMenu()" [style.transform]="menuTriggered ? 'translateX(min(100vw, 300px))' : 'translateX(0%)'"></div>
 </div>
 <div class="navbar-menu" [style.transform]="menuTriggered ? 'translateX(0%)' : 'translateX(-100%)'">
-
+    <a class="navbar-option" routerLink="/homepage" (click)="closeScreen()">
+        <span class="bi bi-house" style="color: white"></span>
+        <label style="color: white">Startseite</label>
+    </a>
+    <a class="navbar-option" routerLink="/boxes" (click)="closeScreen()">
+        <span class="bi bi-archive" style="color: white"></span>
+        <label style="color: white">Boxen verwalten</label>
+    </a>
+    <a class="navbar-option" routerLink="/boxes/create" (click)="closeScreen()">
+        <span class="bi bi-file-plus" style="color: white"></span>
+        <label style="color: white">Box erstellen</label>
+    </a>
 </div>

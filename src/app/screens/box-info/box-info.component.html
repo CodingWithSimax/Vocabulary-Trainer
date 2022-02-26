@@ -1,0 +1,23 @@
+<div class="box-info-content position-relative w-100 h-100 d-flex flex-column flex-nowrap">
+    <h1 class="display-6 bg-light border p-2"><span class="text-muted">Box:</span> {{currentBox?.name}}</h1>
+
+    <div class="flex-grow-1 m-1">
+        <div class="mb-3 d-flex flex-row flex-nowrap">
+            <label for="vocabulary-label" class="col-form-label m-3 text-nowrap">Vokabel hinzufügen: </label>
+            <input id="vocabulary-label" class="form-control m-3" (input)="inputChange($any($event.target))">
+            <button type="submit" class="btn btn-primary m-3">Hinzufügen</button>
+            <label class="col-form-label m-3 text-nowrap">Erkannte Form: <span style="color: red;">Verb</span></label>
+        </div>
+    </div>
+
+    <div class="vocabularies position-relative w-100">
+        <ul class="list-group list-group-horizontal m-4" *ngFor="let vocabulary of currentBox?.vocabularies">
+            <li class="list-group-item flex-grow-1">genus, generis</li>
+            <li class="list-group-item flex-grow-1"></li>
+            <li class="list-group-item flex-grow-0 btn btn-secondary">
+                <span class="bi bi-info-circle-fill"></span>
+            </li>
+            <li class="list-group-item flex-grow-0 btn btn-warning">Bearbeiten</li>
+        </ul>
+    </div>
+</div>

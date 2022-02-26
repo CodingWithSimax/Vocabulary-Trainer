@@ -1,3 +1,4 @@
 export interface Homepage {
-    title: string
+    title: string,
+    startNow: string
 }

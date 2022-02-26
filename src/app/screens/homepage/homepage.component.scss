@@ -8,14 +8,79 @@
 .homepage-title {
     position: absolute;
 
+    bottom: 50%;
     left: 50%;
-    top: 50%;
 
     font-size: 60px;
     font-weight: bolder;
     color: white;
 
-    max-width: min(200px, 100vw);
+    width: min(200px, 100vw);
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-100%);
+
+    text-shadow: 1px 1px 5px black;
+}
+
+.homepage-button {
+    position: absolute;
+    background-color: darkorange;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    bottom: 10%;
+    z-index: 1000;
+    font-size: 40px;
+
+    box-shadow: 0 0 5px 0 black;
+    filter: brightness(100%);
+
+    transition: filter 0.5s;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+.homepage-button:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+    border: none;
+}
+
+.homepage-wave-background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: calc(50% - 80px);
+    background-color: white;
+    z-index: 501;
+}
+
+
+// shape divider
+.custom-shape-divider-bottom-1645547396 {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) translateY(-100%);
+
+    filter: drop-shadow(0 0 5px black);
+
+    z-index: 500;
+}
+
+.custom-shape-divider-bottom-1645547396 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-bottom-1645547396 .shape-fill {
+    fill: #FFFFFF;
 }

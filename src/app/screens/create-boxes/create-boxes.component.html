@@ -1,0 +1,17 @@
+<div class="create-box-screen">
+    <ng-container *ngIf="currentStep === 1">
+        <div class="box-dialog">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" placeholder="" id="box-name">
+                <label for="box-name">{{languageService.language.boxCreation.boxName}}</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select type="email" class="form-control form-select" id="box-language">
+                    <option *ngFor="let language of languages">{{language}}</option>
+                </select>
+                <label for="box-language">{{languageService.language.boxCreation.boxLanguage}}</label>
+            </div>
+            <button class="btn btn-success w-100" (click)="createBox()">Box erstellen</button>
+        </div>
+    </ng-container>
+</div>

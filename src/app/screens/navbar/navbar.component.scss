@@ -1,5 +1,8 @@
 .navbar {
     z-index: 1000;
+    background-color: darkorange;
+    width: 100vw;
+    //height: 65px;
 }
 
 .navbar-icon {
@@ -11,6 +14,8 @@
     background-color: rgba(255, 255, 255, 0);
     padding: 0;
     margin: 0;
+
+    height: 1.2em;
 
     transition: background-color 0.5s, transform 0.5s;
 }
@@ -37,4 +42,36 @@
 
     transform: translateX(-100%);
     transition: transform 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.navbar-option {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+.navbar-option:hover {
+    cursor: pointer;
+}
+.navbar-option > label:hover {
+    cursor: pointer;
+}
+.navbar-option > span {
+    position: relative;
+    height: 1em;
+
+    top: 50%;
+    transform: translateY(-1em);
+
+    margin-top: 0.05em;
+
+    font-size: 0.8em;
+    margin-right: 10px;
 }
